@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <title>Fibonacci Generator</title>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1><b>Computer Engineering Technology - Web Programming</b></h1>
+  <div class="row justify-content-end">
+    <nav class="navbar bg-light">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="C:/Web_Prog/Lab4/index2.html">Lab 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:/Web_Prog/Lab4/Lab3/index.html">Lab 3</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="C:/Web_Prog/Lab4/index4.html">Lab 4</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+        <h3>Fibonacci Generator</h3>
+        <script>
+          function generateFibonacci() {
+            let maxSequence = prompt("\How many Fibonacci numbers do you want to generate?");
+
+            if (!maxSequence || isNaN(maxSequence) || maxSequence <= 0) {
+              alert("Please enter a valid positive number for the maximum sequence.");
+              return;
+            }
+
+            var a = 0, b = 1;
+            var fibonacciSequence = [a, b];
+
+            for (var i = 2; i <= maxSequence; i++) {
+              var next = a + b;
+              fibonacciSequence.push(next);
+              a = b;
+              b = next;
+            }
+
+            var outputDiv = document.getElementById("fibonacciOutput");
+            var outputHtml = "<h4>Fibonacci sequence up to " + maxSequence + ":</h4>";
+
+            for (var j = 0; j <= maxSequence; j++) {
+              outputHtml += "fib(" + j + ") = " + fibonacciSequence[j];
+              if (j < maxSequence) {
+                outputHtml += "<hr>"; // Add a horizontal line after each Fibonacci number (except the last one)
+              }
+            }
+
+            outputDiv.innerHTML = outputHtml;
+          }
+        </script>
+        <button onclick="generateFibonacci()">Generate</button>
+        <div id="fibonacciOutput"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <p>Footer</p>
+  <p>041-079-310</p>
+  <p>Khwaja Yousuf</p>
+  <p>Mohiyuddeen</p>
+  <p>mohi0018@algonquinlive.com</p>
+</div>
+
+</body>
+</html>
