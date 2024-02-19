@@ -511,3 +511,32 @@
     display: flex;
     justify-content: center;
 }
+
+.footer__link--wrapper {
+    display: flex;
+}
+
+.footer__link--items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+}
+
+.footer__link--items h2 {
+    margin-bottom: 16px;
+}
+
+.footer__link--items > h2 {
+    color: #fff;
+}
+
+.footer__link--items a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
