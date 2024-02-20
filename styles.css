@@ -560,3 +560,10 @@
     align-items: center;
     width: 240px;
 }
+
+.social__logo {
+    color: #fff;
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+}
