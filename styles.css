@@ -553,3 +553,10 @@
 }
 
 
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
