@@ -532,4 +532,10 @@
     transition: 0.3s ease-out;   
 }
 
+/* Social Icons */
+.social__icons--link {
+    color: #fff;
+    font-size: 24px;
+}
+
 
