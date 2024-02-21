@@ -583,3 +583,7 @@
     align-items: center;
     margin-bottom: 16px;
 }
+
+.website__rights {
+    color: #fff;
+}
