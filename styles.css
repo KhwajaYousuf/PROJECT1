@@ -591,7 +591,9 @@
 @media screen and (max-width: 820px) {
     .footer__links {
         padding-top: 2rem;
+    }
 
+    #footer__logo {
     }
     
 }
