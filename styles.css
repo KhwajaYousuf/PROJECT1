@@ -573,10 +573,15 @@
     margin-bottom: 16px;
 }
 
+
 .website__rights {
     color: #fff;
 }
 
 @media screen and (max-width: 820px) {
+    .footer__links {
+        
+    }
     
 }
+
