@@ -596,6 +596,13 @@
         flex-direction: column;
     }
 
+    @media screen and (max-width: 480px) {
+        .footer__link--items {
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+        }
+    }
     
     
 }
