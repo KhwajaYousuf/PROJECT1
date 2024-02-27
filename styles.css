@@ -384,16 +384,16 @@
         #f99185 52%,
         #cf556c 78%,
         #b12a5b 100%
-    );
-    background-size: 100%;
-    margin-bottom: 5;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    
+        );
+        background-size: 100%;
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;   
 }
+
 
 .services__container {
     display: flex;
@@ -406,7 +406,7 @@
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/pexels-rdne-stock-project-7915260.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url('/images/pic2.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -484,7 +484,7 @@
 }
 
 #footer__logo {
-    color: #fff;
+    color: #141414;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -552,8 +552,6 @@
     margin: 40px auto 0 auto;
 }
 
-
-
 .social__icons {
     display: flex;
     justify-content: space-between;
@@ -573,7 +571,6 @@
     margin-bottom: 16px;
 }
 
-
 .website__rights {
     color: #fff;
 }
@@ -584,7 +581,28 @@
     }
 
     #footer__logo {
+        margin-bottom: 2rem;
+    }
+
+    .website__rights {
+        max-resolution: 2rem;
+    }
+
+    .footer__link--wrapper {
+        flex-direction: column;
+    }
+
+    .social__media--wrap {
+        flex-direction: column;
+    }
+
+    @media screen and (max-width: 480px) {
+        .footer__link--items {
+            margin: 0;
+            padding: 10px;
+            width: 100%;
+        }
     }
     
+    
 }
-
